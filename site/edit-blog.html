@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+<head>
+  <title>Update Blog Post</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&amp;display=swap">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .ie-panel {
+      display: none;
+      background: #212121;
+      padding: 10px 0;
+      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+      clear: both;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {
+      display: block;
+    }
+    body {
+      background: #f7f0eb;
+      margin: 0;
+      font-family: 'DM Sans', sans-serif;
+    }
+    .page {
+      width: 100%;
+      height: 100%;
+    }
+    .update-post-container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .post-picture {
+      height: 450px;
+      text-align: center;
+      border: 2px dashed #ccc;
+      border-radius: 10px;
+      padding: 2rem;
+      width: 40%;
+      cursor: pointer;
+    }
+    .post-picture:hover {
+      background: #f1f1f1;
+    }
+    .post-picture input {
+      display: none;
+    }
+    .post-picture img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .post-picture p {
+      margin: 0.5rem 0;
+      color: #888;
+    }
+    .post-form {
+      width: 55%;
+      background: #fff; /* Arka plan rengini beyaz yap */
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hafif gölge ekle */
+    }
+    .post-form label {
+      display: block;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+    .post-form input, .post-form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+      background: #fff; /* Form elemanlarının arka planını beyaz yap */
+    }
+    .post-form textarea {
+      height: 200px;
+      resize: none;
+    }
+    .search-bar {
+      margin-right: 490px;
+      display: flex;
+      align-items: center;
+    }
+    .rd-navbar-nav {
+      display: flex;
+      justify-content: flex-start; /* Navbar öğelerini sola yaslamak için */
+    }
+    .search-bar input[type="text"] {
+      border: 1px solid #ccc;
+      padding: 5px;
+      font-size: 14px;
+      border-radius: 30px; /* Kenarlara yuvarlaklık eklemek için */
+    }
+    .search-bar .search-icon {
+      padding: 5px 10px;
+      color: #979696;
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 30px; /* Kenarlara yuvarlaklık eklemek için */
+    }
+  </style>
+</head>
+<body>
+  <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+  <div class="preloader">
+    <div class="preloader-body">
+      <div class="cssload-container">
+        <div class="cssload-speeding-wheel"></div>
+      </div>
+      <p>Loading...</p>
+    </div>
+  </div>
+  <div class="page">
+    <header class="section page-header">
+      <!--RD Navbar-->
+      <div class="rd-navbar-wrap">
+        <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+          <div class="rd-navbar-main-outer">
+            <div class="rd-navbar-main">
+              <!--RD Navbar Panel-->
+              <div class="rd-navbar-panel">
+                <!--RD Navbar Toggle-->
+                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+              </div>
+              <div class="rd-navbar-main-element">
+                <div class="rd-navbar-nav-wrap">
+                  <ul class="rd-navbar-nav">
+                    <li class="rd-nav-item search-bar">
+                      <input type="text" placeholder="Search...">
+                      <span class="search-icon"><i class="fas fa-search"></i></span>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="sign-in-home.html">Home</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="blogs.html">Blog</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="videotutorials.html">Video Tutorials</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="productreviews.html">Product Reviews</a></li>
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="about-me.html">Profile</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Update Blog Post Section -->
+    <div class="update-post-container">
+      <div class="post-picture" onclick="document.getElementById('post-pic-input').click();">
+        <input type="file" id="post-pic-input" accept="image/*">
+        <img src="images/blog-1.jpg" alt="Blog Post Image">
+        <p>CLICK TO UPDATE PICTURE</p>
+      </div>
+      <form class="post-form" action="update.php" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="post_id" value="<!-- ID of the post to be updated -->">
+        
+        <label for="title">UPDATE TITLE</label>
+        <input type="text" id="title" name="title" placeholder="ENTER THE TITLE HERE..." value="Really Important Things That I Think About When I’m Washing Makeup Brushes" required>
+        
+        <label for="text">UPDATE TEXT</label>
+        <textarea id="text" name="text" placeholder="ENTER THE TEXT HERE..." required>
+I found a stash of Keurig coffee cups at the office. They’re squirreled away in a cabinet that’s supposed to contain stuff for everyone to use, but I don’t think most people would bother to check it. I wanna be a team player and tell my office mates about the stash, but I also want to have ALL THAT COFFEE to myself, ha ha ha!
+Also, I really can’t hang with this rainy weather. I keep telling myself that longer days are just around the corner, but it’s been gray and dreary a lot here, and I just wanna feel the sun on my skin and be outside in warm, fresh air.
+If you’re feeling the rain and wanna set a moody a vibe, though, FYI, I just discovered a really lovely rainy day song called “Glitter” by Patrick Droney. The perfect type of bittersweet song for a cozy afternoon.
+Oh! At lunch today, I realized that “Trader Joe’s Salad Hacks” should totally be a thing. Today, I had their pre-packaged Pasadena salad, which is pretty good on its own (chopped romaine, slivered almonds, chicken, and the crunchy white bits you’d find in a Chinese chicken salad). But I found out it’s even better when you add a scoop of crispy chickpeas (highly recommend the Sea Salt flavor by Biena) and a scoop of hemp hearts. It was SUPER GOOD, and it held me over for hours.
+Completely not related to salad at all, but I ran out of brow pencil a few days ago, and I’m contemplating going back to the Chanel Boy brow pencil I was using and loving a while back. I’ve been all doing old school Anastasia Brow Wiz for the last few months and it’s fine, I guess, but you know how it goes. One gets itchy to swap out the same-o-same-o for something different. At least I do, ha!
+Speaking of Chanel, I’ve been thinking about their awesome red nail polishes because I saw a reel on Instagram where a gal talked about wearing short red nails for a whole year. A WHOLE YEAR!
+Can you even imagine, in this day and age, with all the access to different colors that we have, doing short red nails for an entire year?
+She made a good case for it, though, and said that it freed her up from spending any time having to make nail polish decisions, and that she always felt chic, and that red goes with most everything. I’m thinking of trying it, but I’m definitely not ready to commit to a whole year. Maybe three months? I’ve been slacking when it comes to manicures and hoping this will get me back in the groove.
+What’s going on with you? I hope life is treating you well.
+Your friendly neighborhood beauty addict,
+Karen
+        </textarea>  
+        <button type="submit" class="button button-secondary button-sm">Update Post</button>
+      </form>
+    </div>
+  </div>
+  <div class="snackbars" id="form-output-global"></div>
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
+  <!--coded by dyoma-->
+</body>
+</html>

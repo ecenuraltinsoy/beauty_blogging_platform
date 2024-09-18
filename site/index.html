@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&amp;display=swap">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .ie-panel {
+      display: none;
+      background: #212121;
+      padding: 10px 0;
+      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+      clear: both;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {
+      display: block;
+    }
+    .rd-navbar-main {
+      display: flex;
+      justify-content: space-between; /* Sol ve sağ tarafı ayırmak için */
+      align-items: center;
+    }
+    .rd-navbar-nav {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .rd-nav-item {
+      margin-left: 15px;
+    }
+    .search-bar {
+      display: flex;
+      align-items: center;
+      margin-right: auto; /* Search bar'ı sola yaslamak için */
+    }
+    .search-bar input[type="text"] {
+      border: 1px solid #989898;
+      padding: 5px;
+      font-size: 14px;
+      border-radius: 30px;
+    }
+    .search-bar .search-icon {
+      padding: 5px 10px;
+      color: #979696;
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+  <div class="preloader">
+    <div class="preloader-body">
+      <div class="cssload-container">
+        <div class="cssload-speeding-wheel"></div>
+      </div>
+      <p>Loading...</p>
+    </div>
+  </div>
+  <div class="page">
+    <header class="section page-header">
+      <!--RD Navbar-->
+      <div class="rd-navbar-wrap">
+        <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+          <div class="rd-navbar-main-outer">
+            <div class="rd-navbar-main">
+              <!-- Search Bar -->
+              <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <span class="search-icon"><i class="fas fa-search"></i></span>
+              </div>
+              <!--RD Navbar Panel-->
+              <div class="rd-navbar-panel">
+                <!--RD Navbar Toggle-->
+                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                <!--RD Navbar Brand-->
+              </div>
+              <div class="rd-navbar-main-element">
+                <div class="rd-navbar-nav-wrap">
+                  <ul class="rd-navbar-nav">
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="blogs.html">Blog</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="videotutorials.html">Video Tutorials</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="productreviews.html">Product Reviews</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="sign-in.html">Sign In</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--Main Banner-->
+    <div class="section section-main-bunner context-dark" id="home">
+      <div class="main-bunner-img bg-overlay-1" style="background-image: url('images/makeup-background.jpg'); background-size: cover;"></div>
+      <div class="main-bunner-inner">
+        <div class="container wide">
+          <div class="row justify-content-left">
+            <div class="col-lg-12 text-center">
+              <!-- Metin değiştirildi -->
+              <h1 data-caption-animate="fadeInUp" data-caption-delay="100">BEAUTY BLOGGING PLATFORM</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Blog Posts -->
+    <div class="section section-lg bg-gray-150">
+      <div class="container wide">
+        <div class="text-center">
+          <h2 class="title">LATEST BLOG POSTS</h2>
+        </div>
+        <div class="row row-40">
+          <!-- Blog Post 1 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="post-box">
+              <a href="blog-post-1.html"><img src="images/blog-1.jpg" alt="Blog Post 1" class="post-image"></a>
+              <h4 class="post-title"><a href="blog-post-1.html">Really Important Things That I Think About When I’m Washing Makeup Brushes</a></h4>
+              <p class="post-excerpt">I found a stash of Keurig coffee cups at the office. They’re squirreled away in a cabinet that’s supposed to contain stuff for everyone to use, but I don’t think most people would bother to check it. I wanna be a team player and tell my office mates about the stash, but I also want to have ALL THAT COFFEE to myself, ha ha ha!
+              </p>
+              <a class="button button-secondary button-sm" href="blog-post-1.html">Read More</a>
+            </div>
+          </div>
+          <!-- Blog Post 2 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="post-box">
+              <a href="blog-post-2.html"><img src="images/foundation.jpg" alt="Blog Post 2" class="post-image"></a>
+              <h4 class="post-title"><a href="blog-post-2.html">Conceal, Sculpt, and Highlight Your Face With PureMatch Liquid Concealer</a></h4>
+              <p class="post-excerpt">PureMatch Liquid Concealer is an all over, multi-tasking concealer with weightless coverage and a soft matte finish. Use it to conceal, brighten, and define while nourishing the skin and delivering natural-looking coverage. It can be used as an under-eye concealer, blemish concealer, or an allover concealer! </p>
+              <a class="button button-secondary button-sm" href="blog-post-2.html">Read More</a>
+            </div>
+          </div>
+          <!-- Blog Post 3 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="post-box">
+              <a href="blog-post-3.html"><img src="images/blog-3.jpg" alt="Blog Post 3" class="post-image"></a>
+              <h4 class="post-title"><a href="blog-post-3.html">Cream vs Powder Bronzer: Which Is Best For You</a></h4>
+              <p class="post-excerpt">It’s that time again, the sun is shining brightly, the days are longer, and the look of sun-kissed skin is in. Summertime is the ideal time to explore the world of bronzers.
+                There is a misconception that bronzing and contouring are one and the same, this couldn’t be further from the truth. </p>
+              <a class="button button-secondary button-sm" href="blog-post-3.html">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="snackbars" id="form-output-global"></div>
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
+  <!--coded by dyoma-->
+</body>
+</html>

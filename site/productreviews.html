@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+<head>
+  <title>Product Reviews</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&amp;display=swap">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .ie-panel {
+      display: none;
+      background: #212121;
+      padding: 10px 0;
+      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+      clear: both;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {
+      display: block;
+    }
+    .rd-navbar-nav {
+      display: flex;
+      justify-content: flex-start; /* Navbar öğelerini sola yaslamak için */
+    }
+    .search-bar {
+      margin-right: 490px;
+      display: flex;
+      align-items: center;
+    }
+    .search-bar input[type="text"] {
+      border: 1px solid #ccc;
+      padding: 5px;
+      font-size: 14px;
+      border-radius: 30px; /* Kenarlara yuvarlaklık eklemek için */
+    }
+    .search-bar .search-icon {
+      padding: 5px 10px;
+      color: #979696;
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 30px; /* Kenarlara yuvarlaklık eklemek için */
+    }
+  </style>
+</head>
+<body>
+  <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+  <div class="preloader">
+    <div class="preloader-body">
+      <div class="cssload-container">
+        <div class="cssload-speeding-wheel"></div>
+      </div>
+      <p>Loading...</p>
+    </div>
+  </div>
+  <div class="page">
+    <header class="section page-header">
+      <!--RD Navbar-->
+      <div class="rd-navbar-wrap">
+        <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+          <div class="rd-navbar-main-outer">
+            <div class="rd-navbar-main">
+              <!--RD Navbar Panel-->
+              <div class="rd-navbar-panel">
+                <!--RD Navbar Toggle-->
+                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+              </div>
+              <div class="rd-navbar-main-element">
+                <div class="rd-navbar-nav-wrap">
+                  <ul class="rd-navbar-nav">
+                    <li class="rd-nav-item search-bar">
+                      <input type="text" placeholder="Search...">
+                      <span class="search-icon"><i class="fas fa-search"></i></span>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="sign-in-home.html">Home</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="blogs.html">Blog</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="videotutorials.html">Video Tutorials</a></li>
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="productreviews.html">Product Reviews</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="about-me.html">Profile</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Blog Posts -->
+    <div class="section section-lg bg-gray-150">
+      <div class="container wide">
+        <div class="row row-40">
+            <!-- Blog Post 1 -->
+            <div class="col-md-6">
+                <div class="post-box">
+                    <a href="product-review-1.html"><img src="images/dry-shampoo.jpg" alt="Product Review 1" class="post-image"></a>
+                    <h4 class="post-title"><a href="product-review-1.html">Amika Dry Shampoo Is Awesome | Important Lessons on Aging</a></h4>
+                    <p class="post-excerpt">My main criteria for dry shampoo is how my day-two roots feel after a few sprays. If they’re stiff and coated in a thick layer of crusty powder, forget about it! I prefer lightweight sprays that virtually disappear into the hair yet still manage to soak up any jankiness.</p>
+                    <a class="button button-secondary button-sm" href="product-review-1.html">Read More</a>
+                </div>
+            </div>
+            <!-- Blog Post 2 -->
+            <div class="col-md-6">
+                <div class="post-box">
+                    <a href="product-review-2.html"><img src="images/cleanser.jpg" alt="Product Review 2" class="post-image"></a>
+                    <h4 class="post-title"><a href="product-review-2.html">A Marvelous Makeup Cleanser and 3 Game-Changing Things for Better Mornings</a></h4>
+                    <p class="post-excerpt">I really wanted the Oat Cleansing Balm makeup remover by the Inkey List to smell like a freshly baked oatmeal cookie. Alas, it’s more like uncooked oatmeal when you first open the packaging. Kinda earthy. I don’t mind it!</p>
+                    <a class="button button-secondary button-sm" href="product-review-2.html">Read More</a>
+                </div>
+            </div>
+            <!-- Blog Post 3 -->
+            <div class="col-md-6">
+                <div class="post-box">
+                    <a href="product-review-3.html"><img src="images/mac-sweet-deal.jpg" alt="Product Review 3" class="post-image"></a>
+                    <h4 class="post-title"><a href="product-review-3.html">Lip of the Day: MAC Sweet Deal Maximial Lipstick</a></h4>
+                    <p class="post-excerpt">There are some things one could always rely on like the sun rising and setting, internet cats doing silly things, chin hairs spontaneously sprouting in the middle of a meeting and MAC matte lipsticks gripping onto one’s lips for dear life.</p>
+                    <a class="button button-secondary button-sm" href="product-review-3.html">Read More</a>
+                </div>
+            </div>
+            <!-- Blog Post 4 -->
+            <div class="col-md-6">
+                <div class="post-box">
+                    <a href="product-review-4.html"><img src="images/chocolate.jpg" alt="Product Review 4" class="post-image"></a>
+                    <h4 class="post-title"><a href="product-review-4.html">Checking In: Chocolate Epiphanies, Too Faced Better Than Chocolate Palette, Second Interviews and Shiseido</a></h4>
+                    <p class="post-excerpt">I don’t know when it happened, but sometime within the last few months, I switched from being on Team Milk Chocolate to Team Dark Chocolate, which is crazy to me because for years now, I’ve said to anyone and everyone who’ll listen that dark chocolate tastes like punishment, LOL!</p>
+                    <a class="button button-secondary button-sm" href="product-review-4.html">Read More</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="snackbars" id="form-output-global"></div>
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
+  <!--coded by dyoma-->
+</body>
+</html>

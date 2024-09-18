@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+<head>
+  <title>Blog Post</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&amp;display=swap">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .ie-panel { 
+      display: none;
+      background: #212121;
+      padding: 10px 0;
+      box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);
+      clear: both;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    } 
+    html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel { 
+      display: block;
+    }
+
+    /* Tarih ile yazar ismi arasına boşluk eklemek için */
+    .post-meta {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px; /* Aradaki boşluk miktarı */
+    }
+
+    /* Comments kısmını aşağı taşımak için */
+    .comments-section {
+      margin-top: 40px; /* Üstteki boşluk miktarı */
+    }
+
+    /* Leave a Comment kısmıyla Comments kısmı arasındaki boşluk */
+    .comment-form {
+      margin-top: 30px; /* Üstteki boşluk miktarı */
+    }
+    .rd-navbar-nav {
+      display: flex;
+      justify-content: flex-start; /* Navbar öğelerini sola yaslamak için */
+    }
+    .search-bar {
+      margin-right: 490px;
+      display: flex;
+      align-items: center;
+    }
+    .search-bar input[type="text"] {
+      border: 1px solid #ccc;
+      padding: 5px;
+      font-size: 14px;
+      border-radius: 30px; /* Kenarlara yuvarlaklık eklemek için */
+    }
+    .search-bar .search-icon {
+      padding: 5px 10px;
+      color: #979696;
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 30px; /* Kenarlara yuvarlaklık eklemek için */
+    }
+  </style>
+</head>
+<body>
+  <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+  <div class="preloader">
+    <div class="preloader-body">
+      <div class="cssload-container">
+        <div class="cssload-speeding-wheel"></div>
+      </div>
+      <p>Loading...</p>
+    </div>
+  </div>
+  <div class="page">
+    <header class="section page-header">
+      <!--RD Navbar-->
+      <div class="rd-navbar-wrap">
+        <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+          <div class="rd-navbar-main-outer">
+            <div class="rd-navbar-main">
+              <!--RD Navbar Panel-->
+              <div class="rd-navbar-panel">
+                <!--RD Navbar Toggle-->
+                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+              </div>
+              <div class="rd-navbar-main-element">
+                <div class="rd-navbar-nav-wrap">
+                  <ul class="rd-navbar-nav">
+                    <li class="rd-nav-item search-bar">
+                      <input type="text" placeholder="Search...">
+                      <span class="search-icon"><i class="fas fa-search"></i></span>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="sign-in-home.html">Home</a></li>
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="blogs.html">Blog</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="videotutorials.html">Video Tutorials</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="productreviews.html">Product Reviews</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="about-me.html">Profile</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Blog Post -->
+    <div class="section section-lg bg-gray-150">
+      <div class="container wide">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <article class="post">
+              <h2 class="post-title">Really Important Things That I Think About When I’m Washing Makeup Brushes</h2>
+              <div class="post-meta">
+                <span class="author">by Karen</span>
+                <span class="date">Jan 17, 2024</span>
+              </div>
+              <img src="images/blog-1.jpg" alt="Blog Post Image" class="post-image">
+              <p class="post-content">I found a stash of Keurig coffee cups at the office. They’re squirreled away in a cabinet that’s supposed to contain stuff for everyone to use, but I don’t think most people would bother to check it. I wanna be a team player and tell my office mates about the stash, but I also want to have ALL THAT COFFEE to myself, ha ha ha!</p>
+              <p class="post-content">Also, I really can’t hang with this rainy weather. I keep telling myself that longer days are just around the corner, but it’s been gray and dreary a lot here, and I just wanna feel the sun on my skin and be outside in warm, fresh air.</p>
+              <p class="post-content">If you’re feeling the rain and wanna set a moody a vibe, though, FYI, I just discovered a really lovely rainy day song called “Glitter” by Patrick Droney. The perfect type of bittersweet song for a cozy afternoon.</p>
+              <p class="post-content">Oh! At lunch today, I realized that “Trader Joe’s Salad Hacks” should totally be a thing. Today, I had their pre-packaged Pasadena salad, which is pretty good on its own (chopped romaine, slivered almonds, chicken, and the crunchy white bits you’d find in a Chinese chicken salad). But I found out it’s even better when you add a scoop of crispy chickpeas (highly recommend the Sea Salt flavor by Biena) and a scoop of hemp hearts. It was SUPER GOOD, and it held me over for hours.</p>
+              <p class="post-content">Completely not related to salad at all, but I ran out of brow pencil a few days ago, and I’m contemplating going back to the Chanel Boy brow pencil I was using and loving a while back. I’ve been all doing old school Anastasia Brow Wiz for the last few months and it’s fine, I guess, but you know how it goes. One gets itchy to swap out the same-o-same-o for something different. At least I do, ha!</p>
+              <p class="post-content">Speaking of Chanel, I’ve been thinking about their awesome red nail polishes because I saw a reel on Instagram where a gal talked about wearing short red nails for a whole year. A WHOLE YEAR!</p>
+              <p class="post-content">Can you even imagine, in this day and age, with all the access to different colors that we have, doing short red nails for an entire year?</p>
+              <p class="post-content">She made a good case for it, though, and said that it freed her up from spending any time having to make nail polish decisions, and that she always felt chic, and that red goes with most everything. I’m thinking of trying it, but I’m definitely not ready to commit to a whole year. Maybe three months? I’ve been slacking when it comes to manicures and hoping this will get me back in the groove.</p>
+              <p class="post-content">What’s going on with you? I hope life is treating you well.</p>
+              <p class="post-content">Your friendly neighborhood beauty addict,</p>
+              <p class="post-content">Karen</p>            
+            </article>
+            
+
+  <!-- AddToAny BEGIN -->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+  <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+  <a class="a2a_button_facebook"></a>
+  <a class="a2a_button_email"></a>
+  <a class="a2a_button_whatsapp"></a>
+  <a class="a2a_button_telegram"></a>
+  <a class="a2a_button_x"></a>
+  </div>
+  <script async src="https://static.addtoany.com/menu/page.js"></script>
+
+  <br>
+<!-- LikeBtn.com BEGIN -->
+<style>
+  .likebtn-wrapper {
+      display: flex;
+      justify-content: flex-start; /* Butonları sağa hizalamak için */
+      width: 100%; /* Konteyner genişliğini yüzde olarak ayarlayabilirsiniz */
+      padding-left: 0px; /* Butonları sağa yaklaştırmak için sağdan boşluk ekleyin */
+  }
+  
+  .likebtn-wrapper .likebtn-button {
+      transform: scale(1.5); /* Butonları büyütmek için ölçeklendirme */
+      margin-left: 20px; /* Butonlar arasındaki boşluk */
+  }
+  
+  .likebtn-wrapper .likebtn-button:last-child {
+      margin-right: 0; /* Son butonda margin-right uygulamamak için */
+  }
+  </style>
+<!-- LikeBtn.com BEGIN -->
+<style>
+  .likebtn-wrapper {
+      display: flex;
+      justify-content: flex-start; /* Butonları sağa hizalamak için */
+      width: 100%; /* Konteyner genişliğini yüzde olarak ayarlayabilirsiniz */
+      padding-left: 0px; /* Butonları sağa yaklaştırmak için sağdan boşluk ekleyin */
+  }
+  
+  .likebtn-wrapper .likebtn-button {
+      transform: scale(1.5); /* Butonları büyütmek için ölçeklendirme */
+      margin-left: 20px; /* Butonlar arasındaki boşluk */
+  }
+  
+  .likebtn-wrapper .likebtn-button:last-child {
+      margin-right: 0; /* Son butonda margin-right uygulamamak için */
+  }
+  </style>
+  <span class="likebtn-wrapper" data-theme="review" data-ef_voting="push" data-identifier="like"></span>
+  <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+  <!-- LikeBtn.com END -->
+  
+  
+            <!-- Comments Section -->
+            <div class="comments-section">
+              <h3>Comments</h3>
+              <div class="comment">
+                <p><strong>John Smith:</strong> This is a great post! I really enjoyed reading it.</p>
+                <p class="comment-date">Jan 17, 2024</p>
+              </div>
+              <div class="comment">
+                <p><strong>Jane Doe:</strong> Thank you for the insightful information!</p>
+                <p class="comment-date">Jan 18, 2024</p>
+              </div>
+              <div class="comment">
+                <p><strong>Emily Johnson:</strong> I love how you described the content. It's very inspiring.</p>
+                <p class="comment-date">Jan 19, 2024</p>
+              </div>
+              <div class="comment-form">
+                <h4>Leave a Comment</h4>
+                <form>
+                  <div class="form-group">
+                    <label for="comment-name">Name</label>
+                    <input type="text" id="comment-name" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="comment-message">Comment</label>
+                    <textarea id="comment-message" class="form-control"></textarea>
+                  </div>
+                  <button type="submit" class="button button-secondary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="snackbars" id="form-output-global"></div>
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
+  <!--coded by dyoma-->
+</body>
+</html>

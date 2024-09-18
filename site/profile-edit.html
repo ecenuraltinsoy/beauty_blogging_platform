@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+<head>
+  <title>Edit My Profile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&amp;display=swap">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .ie-panel {
+      display: none;
+      background: #212121;
+      padding: 10px 0;
+      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+      clear: both;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {
+      display: block;
+    }
+    body {
+      background: #f7f0eb;
+      margin: 0;
+      font-family: 'DM Sans', sans-serif;
+    }
+    .page {
+      width: 100%;
+      height: 100%;
+    }
+    .edit-profile-container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .profile-picture {
+       height: 450px;
+      text-align: center;
+      border: 2px dashed #ccc;
+      border-radius: 10px;
+      padding: 2rem;
+      width: 40%;
+      cursor: pointer;
+    }
+    .profile-picture:hover {
+      background: #f1f1f1;
+    }
+    .profile-picture input {
+      display: none;
+      text-align: center;
+    }
+    .profile-picture p {
+      margin: 0.5rem 0;
+      color: #888;
+      text-align: center;
+    }
+    .profile-form {
+      width: 55%;
+    }
+    .profile-form label {
+      display: block;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+    .profile-form input, .profile-form select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    .profile-form button {
+      margin-top: 2rem;
+      padding: 0.7rem 2rem;
+      background: #b38b6d;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .profile-form button:hover {
+      background: #9e7762;
+    }
+    .search-bar {
+  margin-right: 490px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  border: 1px solid #ccc;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 30px; /* Kenarlara yuvarlaklık eklemek için */
+}
+.rd-navbar-nav {
+      display: flex;
+      justify-content: flex-start; /* Navbar öğelerini sola yaslamak için */
+    }
+
+.search-bar .search-icon {
+  padding: 5px 10px;
+  color: #979696;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 30px; /* Kenarlara yuvarlaklık eklemek için */
+}
+  </style>
+</head>
+<body>
+  <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+  <div class="preloader">
+    <div class="preloader-body">
+      <div class="cssload-container">
+        <div class="cssload-speeding-wheel"></div>
+      </div>
+      <p>Loading...</p>
+    </div>
+  </div>
+  <div class="page">
+    <header class="section page-header">
+      <!--RD Navbar-->
+      <div class="rd-navbar-wrap">
+        <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+          <div class="rd-navbar-main-outer">
+            <div class="rd-navbar-main">
+              <!--RD Navbar Panel-->
+              <div class="rd-navbar-panel">
+                <!--RD Navbar Toggle-->
+                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                <!--RD Navbar Brand-->
+                <div class="rd-navbar-brand">
+                  <!--Brand-->
+                  <!-- Logo kaldırıldı -->
+                </div>
+              </div>
+              <div class="rd-navbar-main-element">
+                <div class="rd-navbar-nav-wrap">
+                  <ul class="rd-navbar-nav">
+                    <li class="rd-nav-item search-bar">
+                      <input type="text" placeholder="Search...">
+                      <span class="search-icon"><i class="fas fa-search"></i></span>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="sign-in-home.html">Home</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="blogs.html">Blog</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="videotutorials.html">Video Tutorials</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="productreviews.html">Product Reviews</a></li>
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="about-me.html">Profile</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Edit Profile Section -->
+    <div class="edit-profile-container">
+      <div class="profile-picture" onclick="document.getElementById('profile-pic-input').click();">
+        <input type="file" id="profile-pic-input" accept="image/*">
+        <img src="images/karen.jpeg" alt="Profile Picture">
+        <p>CLICK TO ADD A PROFILE PICTURE</p>
+        <a href="">ADD PROFILE PICTURE</a>
+      </div>
+      <form class="profile-form">
+        <label for="name">NAME</label>
+        <input type="text" id="name" name="name" value="Karen Baylee" required>
+        
+        <label for="email">E-MAIL</label>
+        <input type="email" id="email" name="email" value="karen_baylee@gmail.com" required>
+        
+        <label for="password">PASSWORD</label>
+        <input type="password" id="password" name="password" value="**********" required>
+        
+        <label for="dob">DATE OF BIRTH</label>
+        <select id="birthdate">
+          <option value="" disabled selected>Select</option>
+        </select>
+      
+        <script>
+          const birthdateSelect = document.getElementById('birthdate');
+const currentDate = new Date();
+const currentYear = currentDate.getFullYear();
+const startYear = 1990;
+const selectedDate = "1992-07-15"; // Varsayılan olarak seçilecek tarih
+
+function addLeadingZero(num) {
+  return num < 10 ? `0${num}` : num;
+}
+
+for (let year = startYear; year <= currentYear; year++) {
+  for (let month = 0; month < 12; month++) {
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+    for (let day = 1; day <= daysInMonth; day++) {
+      const option = document.createElement('option');
+      const dateValue = `${year}-${addLeadingZero(month + 1)}-${addLeadingZero(day)}`;
+      const dateText = new Date(dateValue).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+      option.value = dateValue;
+      option.textContent = dateText;
+      if (dateValue === selectedDate) {
+        option.selected = true; // Varsayılan olarak seç
+      }
+      birthdateSelect.appendChild(option);
+    }
+  }
+}
+
+        </script>
+        
+        <a class="button button-secondary button-sm" href="blog-post-5.html">Save Changes</a>
+      </form>
+    </div>
+  </div>
+  <div class="snackbars" id="form-output-global"></div>
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
+  <!--coded by dyoma-->
+</body>
+</html>

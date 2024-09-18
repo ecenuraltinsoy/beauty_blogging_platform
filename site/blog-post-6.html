@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+<head>
+  <title>Blog Post</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=DM+Sans:400,400i,500,500i,700,700i&amp;display=swap">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .ie-panel { 
+      display: none;
+      background: #212121;
+      padding: 10px 0;
+      box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);
+      clear: both;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    } 
+    html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel { 
+      display: block;
+    }
+
+    /* Tarih ile yazar ismi arasına boşluk eklemek için */
+    .post-meta {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px; /* Aradaki boşluk miktarı */
+    }
+
+    /* Comments kısmını aşağı taşımak için */
+    .comments-section {
+      margin-top: 40px; /* Üstteki boşluk miktarı */
+    }
+
+    /* Leave a Comment kısmıyla Comments kısmı arasındaki boşluk */
+    .comment-form {
+      margin-top: 30px; /* Üstteki boşluk miktarı */
+    }
+    .rd-navbar-nav {
+  display: flex;
+  justify-content: flex-start; /* Navbar öğelerini sola yaslamak için */
+}
+
+.search-bar {
+  margin-right: 490px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  border: 1px solid #ccc;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 30px; /* Kenarlara yuvarlaklık eklemek için */
+}
+
+.search-bar .search-icon {
+  padding: 5px 10px;
+  color: #979696;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 30px; /* Kenarlara yuvarlaklık eklemek için */
+}
+  </style>
+</head>
+<body>
+  <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+  <div class="preloader">
+    <div class="preloader-body">
+      <div class="cssload-container">
+        <div class="cssload-speeding-wheel"></div>
+      </div>
+      <p>Loading...</p>
+    </div>
+  </div>
+  <div class="page">
+    <header class="section page-header">
+      <!--RD Navbar-->
+      <div class="rd-navbar-wrap">
+        <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+          <div class="rd-navbar-main-outer">
+            <div class="rd-navbar-main">
+              <!--RD Navbar Panel-->
+              <div class="rd-navbar-panel">
+                <!--RD Navbar Toggle-->
+                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+              </div>
+              <div class="rd-navbar-main-element">
+                <div class="rd-navbar-nav-wrap">
+                  <ul class="rd-navbar-nav">
+                    <li class="rd-nav-item search-bar">
+                      <input type="text" placeholder="Search...">
+                      <span class="search-icon"><i class="fas fa-search"></i></span>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="sign-in-home.html">Home</a></li>
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="blogs.html">Blog</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="videotutorials.html">Video Tutorials</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="productreviews.html">Product Reviews</a></li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="about-me.html">Profile</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Blog Post -->
+    <div class="section section-lg bg-gray-150">
+      <div class="container wide">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <article class="post">
+              <h2 class="post-title">I Found the Loveliest Lipgloss</h2>
+              <div class="post-meta">
+                <span class="author">by Karen</span>
+                <span class="date">May 10, 2024</span>
+              </div>
+              <img src="images/lipgloss.jpeg" alt="Blog Post Image" class="post-image">
+              
+              <p class="post-content">Somewhere along the way, I became the type of makeup person who’d rather have one thing they really love instead of 10 things they kinda like, and when it comes to lipgloss, the only one I’m rollin’ with these days is Rare Beauty’s Stay Vulnerable Glossy Lip Balm in Nearly Apricot ($20), a sheer coral.</p>
+              <p class="post-content">With a super shiny finish and a sheer hint of tint, this gloss ticks all the boxes!</p>
+              <p class="post-content">It’s sticky enough to hang onto my lips for a few hours, but not so terribly tacky that it’s distracting and it never leaves my lips feeling parched or flaky.</p>
+              <p class="post-content">The level of obsession is so high at the moment that I keep it with me in my purse at all times, and if Connor happens to be in my orbit, I’ll ask her if she wants to wear a little bit too, and she always says yes.</p>
+              <p class="post-content">It’s a pleasure to wear and reapply, and I reach for it often!</p>
+              <p class="post-content">It comes in six shades:</p>
+              <ul class="post-content">
+                <li>Nearly Neutral, a soft neutral pink</li>
+                <li>Nearly Rose, a flushed pink</li>
+                <li>Nearly Berry, a soft berry</li>
+                <li>Nearly Mauve, a soft mauve</li>
+                <li>Nearly Apricot, a soft coral</li>
+              </ul>
+              <p class="post-content">If you’re looking for a gift for mom, hint, hint, she’ll love this gloss. Or, get it as a gift for yourself. Or gift it to anyone in your life who loves a shiny, easy-to-wear gloss with loads of hydration and just enough tint and shine to make that pout pop!</p>
+              <p class="post-content">Your friendly neighborhood beauty addict,</p>
+              <p class="post-content">Karen</p>
+         
+           </article>
+             <!-- AddToAny BEGIN -->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+  <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+  <a class="a2a_button_facebook"></a>
+  <a class="a2a_button_email"></a>
+  <a class="a2a_button_whatsapp"></a>
+  <a class="a2a_button_telegram"></a>
+  <a class="a2a_button_x"></a>
+  </div>
+  <script async src="https://static.addtoany.com/menu/page.js"></script>
+
+  <br>
+<!-- LikeBtn.com BEGIN -->
+<style>
+  .likebtn-wrapper {
+      display: flex;
+      justify-content: flex-start; /* Butonları sağa hizalamak için */
+      width: 100%; /* Konteyner genişliğini yüzde olarak ayarlayabilirsiniz */
+      padding-left: 0px; /* Butonları sağa yaklaştırmak için sağdan boşluk ekleyin */
+  }
+  
+  .likebtn-wrapper .likebtn-button {
+      transform: scale(1.5); /* Butonları büyütmek için ölçeklendirme */
+      margin-left: 20px; /* Butonlar arasındaki boşluk */
+  }
+  
+  .likebtn-wrapper .likebtn-button:last-child {
+      margin-right: 0; /* Son butonda margin-right uygulamamak için */
+  }
+  </style>
+<!-- LikeBtn.com BEGIN -->
+<style>
+  .likebtn-wrapper {
+      display: flex;
+      justify-content: flex-start; /* Butonları sağa hizalamak için */
+      width: 100%; /* Konteyner genişliğini yüzde olarak ayarlayabilirsiniz */
+      padding-left: 0px; /* Butonları sağa yaklaştırmak için sağdan boşluk ekleyin */
+  }
+  
+  .likebtn-wrapper .likebtn-button {
+      transform: scale(1.5); /* Butonları büyütmek için ölçeklendirme */
+      margin-left: 20px; /* Butonlar arasındaki boşluk */
+  }
+  
+  .likebtn-wrapper .likebtn-button:last-child {
+      margin-right: 0; /* Son butonda margin-right uygulamamak için */
+  }
+  </style>
+  <span class="likebtn-wrapper" data-theme="review" data-ef_voting="push" data-identifier="like"></span>
+  <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+  <!-- LikeBtn.com END -->
+  
+
+            <!-- Comments Section -->
+            <div class="comments-section">
+              <h3>Comments</h3>
+              <div class="comment">
+                <p><strong>Jami T:</strong> This is my favorite lip gloss formula! Love Nearly Mauve and Nearly Neutral! Long time lurker of this blog and I love your content Karen! Thanks for always being genuine with us 🥰 Happy Mother’s day!</p>
+                <p class="comment-date">May 12th, 2024 at 1:07 pm</p>
+                <br>
+              </div>
+              <div class="comment">
+                <p><strong>CL:</strong> I see Marnie’s learning to pose for the camera. Seeing her really makes me miss my late, beloved Sheltie. I really need to get a new dog, but I can’t do that until I’m settled in a new place – the backyard fence where I’m at is in very bad shape. Since the house is going to be put on the market “as is,” I’m not putting money into rebuilding the fence that’s between two residences. Hopefully by the end of the year I’ll be settled in some place that has a good fenced yard, as I know a Sheltie wouldn’t want to be cooped up in a house all day with just walks for exercise. FWIW, a lot of Shelties are on the big side – my dog was 18″ at the shoulder and about 35 lbs, when the standard says 16″ maximum height to be shown.</p>
+                <p class="comment-date">May 12th, 2024 at 6:52 pm</p>
+              </div>
+
+              <!-- Leave a Comment Form -->
+              <div class="comment-form">
+                <h4>Leave a Comment</h4>
+                <form>
+                  <div class="form-group">
+                    <label for="comment-name">Name</label>
+                    <input type="text" id="comment-name" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="comment-message">Comment</label>
+                    <textarea id="comment-message" class="form-control"></textarea>
+                  </div>
+                  <button type="submit" class="button button-secondary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="snackbars" id="form-output-global"></div>
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
+  <!--coded by dyoma-->
+</body>
+</html>
